@@ -1,23 +1,13 @@
-import styles from './SignIn.module.css';
+import Form from './Form';
 
-function Login() {
+function SignIn() {
   return (
-    <>
-      <div className={styles['content-container']}>
-        <div className={styles.content}>
-          <input type='text' placeholder='Username' />
-          <input type='password' placeholder='Password' />
-          <button type='submit'>Log in</button>
-        </div>
-        <p>
-          Already have an account?
-          <a href='#' className={styles.link}>
-            Log in
-          </a>
-        </p>
-      </div>
-    </>
+      <Form descriptionText='Don’t have an account? ' linkHref='#' linkText='Sign up'>
+        <input type='text' placeholder='Username' />
+        <input type='password' placeholder='Password' />
+        <button type='submit'>Log in</button>
+      </Form>
   );
 }
 
-export default Login;
+export default SignIn;
