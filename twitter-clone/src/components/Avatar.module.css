@@ -1,0 +1,10 @@
+.avatar {
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  background-color: grey;
+  text-align: center;
+  text-transform: uppercase;
+}
