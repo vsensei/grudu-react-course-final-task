@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './components/Header';
 import NewPost from './components/NewPost';
-import Post from './components/Post';
+import Feed from './components/Feed';
 
 function App() {
   return (
@@ -9,8 +9,7 @@ function App() {
       <Header />
       <div className='main'>
         <NewPost />
-        <br />
-        <Post userName='fTest lTest' postText='testestest' />
+        <Feed />
       </div>
     </div>
   );
