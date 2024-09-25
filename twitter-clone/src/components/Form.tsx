@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './Form.module.css';
 
 type FormArgs = {
@@ -10,18 +11,16 @@ const Form: React.FC<FormArgs> = ({ children, descriptionText, linkHref, linkTex
   return (
     <>
       <div className={styles['content-container']}>
-        <div className={styles.content}>
-          {children}
-        </div>
+        <div className={styles.content}>{children}</div>
         <p>
           <span>{descriptionText}</span>
-          <a href={linkHref} className={styles.link}>
+          <Link to={linkHref} className={styles.link}>
             {linkText}
-          </a>
+          </Link>
         </p>
       </div>
     </>
   );
-}
+};
 
 export default Form;
