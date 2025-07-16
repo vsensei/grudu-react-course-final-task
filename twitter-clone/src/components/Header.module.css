@@ -1,0 +1,23 @@
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4%;
+  height: 5rem;
+  max-height: 600px;
+  background-color: lightgrey;
+  color: black;
+  font-size: 1.4rem;
+}
+
+.header-block {
+  display: flex;
+  gap: 1rem;
+
+  & div {
+    display: grid;
+    align-items: center;
+  }
+}

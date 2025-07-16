@@ -1,0 +1,23 @@
+.post {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+.post-avatar {
+  flex: 0.12;
+  background-color: lightskyblue;
+}
+
+.post-text-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: lightgrey;
+}
+
+.post-text-username {
+  font-weight: bold;
+}
