@@ -1,7 +1,8 @@
+import { useRouteLoaderData, useSubmit } from 'react-router-dom';
 import { User } from '../types/user';
 import Avatar from './Avatar';
+
 import styles from './Header.module.css';
-import { useRouteLoaderData, useSubmit } from 'react-router-dom';
 
 function Header() {
   const user = useRouteLoaderData('root') as User;

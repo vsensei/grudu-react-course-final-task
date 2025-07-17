@@ -1,12 +1,13 @@
+import { Suspense } from 'react';
+import { Await, useLoaderData } from 'react-router-dom';
+import NewPost from '../components/NewPost';
 import Post from '../components/Post';
-import styles from './Feed.module.css';
+import { BACKEND_URL_BASE } from '../const';
+import { User } from '../types/user';
 
 import type { FeedPost, FeedPostDb } from '../types/feedPost';
-import { User } from '../types/user';
-import NewPost from '../components/NewPost';
-import { BACKEND_URL_BASE } from '../const';
-import { Await, useLoaderData } from 'react-router-dom';
-import { Suspense } from 'react';
+
+import styles from './Feed.module.css';
 
 function Feed() {
   const { posts } = useLoaderData() as { posts: Promise<FeedPost[]> };

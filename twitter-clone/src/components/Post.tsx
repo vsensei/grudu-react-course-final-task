@@ -1,7 +1,8 @@
 import { getSession } from '../auth';
+import { BACKEND_URL_BASE } from '../const';
 import Avatar from './Avatar';
 import Frame from './Frame';
-import { BACKEND_URL_BASE } from '../const';
+
 import styles from './Post.module.css';
 
 type PostArgs = {

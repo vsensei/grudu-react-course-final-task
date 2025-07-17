@@ -1,5 +1,5 @@
-import Form from '../components/Form';
 import bcrypt from 'bcryptjs';
+import Form from '../components/Form';
 import { signUp } from '../util/signUp';
 
 type ActionData = Record<string, { message: string; status: number }>;

@@ -1,12 +1,13 @@
-import './App.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { checkAuthLoader, sessionLoader } from './auth';
 import { action as newPostAction } from './components/NewPost';
 import Feed, { loader as postsLoader } from './pages/Feed';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { action as LogoutAction } from './pages/Logout';
+import Root from './pages/Root';
 import SignIn, { action as signInAction } from './pages/SignIn';
 import SignUp, { action as signUpAction } from './pages/SignUp';
-import Root from './pages/Root';
-import { checkAuthLoader, sessionLoader } from './auth';
-import { action as LogoutAction } from './pages/Logout';
+
+import './App.css';
 
 function App() {
   const router = createBrowserRouter([

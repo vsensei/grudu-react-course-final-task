@@ -1,7 +1,7 @@
-import { BACKEND_URL_BASE } from '../const';
-import { redirect } from 'react-router-dom';
 import bcrypt from 'bcryptjs';
+import { redirect } from 'react-router-dom';
 import { setupSession } from '../auth';
+import { BACKEND_URL_BASE } from '../const';
 
 type AuthData = {
   userName: string;
